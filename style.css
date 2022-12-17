@@ -86,23 +86,20 @@ section {
   display: flex;
   align-items: center;
   text-transform: capitalize;
-  /* position: relative; */
-  float: left;
- 
 }
 
 .h {
   z-index: 100;
 }
 
- .black {
+.black {
   position: absolute;
   top: 0%;
   left: 0%;
   width: 100%;
-height: 100vh;
-background-color:rgba(1 1 1 / 0.5);
-z-index: 1;
+  height: 100vh;
+  background-color: rgba(1 1 1 / 0.5);
+  z-index: 1;
 }
 
 .header-content p {
@@ -164,8 +161,11 @@ z-index: 1;
 /* end of header-content */
 
 /* start of Section-Cards */
+.cards {
+  margin: 50px;
+}
 
-.title {
+.cards .title {
   text-align: center;
   font-size: 2rem;
   color: var(--color);
@@ -303,15 +303,16 @@ z-index: 1;
     position: absolute;
     transition: 0.5s;
     right: 0%;
-    background-color: #000;
-    margin-top: 140px;
+    background-color: #000016;
+    padding-bottom: 10px;
+    margin-top: 135px;
     width: 100%;
     text-align: center;
   }
 
   nav ul li {
-     display: block;
-     margin-top: 10px;
+    display: block;
+    margin-top: 10px;
   }
 
   #index {
@@ -327,6 +328,7 @@ z-index: 1;
     display: block;
     margin-top: 5px;
   }
+
   nav ul li a {
     font-weight: 400;
     font-size: 1.1rem;
@@ -366,10 +368,41 @@ z-index: 1;
   :root {
     --padding: 40px 50px;
   }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    transition: 0.5s;
+    right: 0%;
+    background-color: #000016;
+    padding-bottom: 10px;
+    margin-top: 135px;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+  }
+
+  #index {
+    position: relative;
+    cursor: pointer;
+    display: block;
+  }
+
+  #index span {
+    width: 33px;
+    height: 5px;
+    background-color: #000;
+    display: block;
+    margin-top: 5px;
+  }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-
   html {
     font-size: 0.9rem;
   }
@@ -381,5 +414,4 @@ z-index: 1;
   :root {
     --padding: 40px 50px;
   }
-
 }
