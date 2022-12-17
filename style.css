@@ -46,6 +46,15 @@ header nav {
   z-index: 999;
 }
 
+nav ul.is-active {
+  display: block;
+  transition: 0.5s;
+}
+
+#index {
+  display: none;
+}
+
 nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -289,6 +298,35 @@ z-index: 1;
     padding: 2px 20px;
   }
 
+  nav ul {
+    display: none;
+    position: absolute;
+    transition: 0.5s;
+    right: 0%;
+    background-color: #000;
+    margin-top: 140px;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li {
+     display: block;
+     margin-top: 10px;
+  }
+
+  #index {
+    position: relative;
+    cursor: pointer;
+    display: block;
+  }
+
+  #index span {
+    width: 33px;
+    height: 5px;
+    background-color: #000;
+    display: block;
+    margin-top: 5px;
+  }
   nav ul li a {
     font-weight: 400;
     font-size: 1.1rem;
